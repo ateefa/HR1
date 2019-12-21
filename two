@@ -1,0 +1,14 @@
+def compareTriplets(a, b):
+	compare=[0,0]
+	for i in range(0,3):
+
+		if(a[i]<b[i]):
+			compare[1]+=1
+		else:
+			compare[0]+=1	
+	return compare		
+
+a = list(map(int, input().rstrip().split()))
+b = list(map(int, input().rstrip().split()))
+result = compareTriplets(a, b)
+print(' '.join(map(str, result)))
